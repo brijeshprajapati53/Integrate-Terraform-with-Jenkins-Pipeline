@@ -25,17 +25,34 @@ pipeline {
             }
         }
 
-        stage('Publish .NET 8 Web API') {
+
+        stage('Restore') {
             steps {
                 dir('WebAppTerraformIntegrated') {
                     bat 'dotnet restore'
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('WebAppTerraformIntegrated') {
                     bat 'dotnet build --configuration Release'
+                }
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                dir('WebAppTerraformIntegrated') {
                     bat 'dotnet publish -c Release -o publish'
                 }
             }
         }
 
-        stage('Deploy to Azure App Service') {
+       
+
+        stage('Deploy') {
             steps {
                 dir('WebAppTerraformIntegrated') {
                     withCredentials([azureServicePrincipal(credentialsId: AZURE_CREDENTIALS_ID)]) {
