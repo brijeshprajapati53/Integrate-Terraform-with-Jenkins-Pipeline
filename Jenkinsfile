@@ -13,6 +13,31 @@ pipeline {
             }
         }
 
+    stage('Terraform Init') {
+             steps {
+                     dir('terraform') {
+                     bat 'terraform init'
+                         }
+                 }
+         }
+
+        stage('Terraform Plan & Apply') {
+ steps {
+ dir('terraform') {
+ bat 'terraform plan -out=tfplan'
+bat 'terraform apply -auto-approve tfplan'
+ }
+ }
+ }
+ stage('Publish .NET 8 Web API') {
+ steps {
+ dir('webapi') {
+ bat 'dotnet publish -c Release -o out'
+ }
+ }
+ }
+
+
         stage('Build') {
             steps {
                 bat 'dotnet restore'
@@ -21,7 +46,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to azure app service') {
             steps {
                 withCredentials([azureServicePrincipal(credentialsId: AZURE_CREDENTIALS_ID)]) {
                     bat "az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID"
@@ -30,6 +55,7 @@ pipeline {
                 }
             }
         }
+
     }
 
     post {
