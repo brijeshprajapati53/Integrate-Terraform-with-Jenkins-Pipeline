@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "hkcA6r18bqSSK3CuBx9ar9u++HT6ibBTkJE1LGjo9VQ=",
+  "Source": "WebAppTerraformIntegrated",
+  "BasePath": "_content/WebAppTerraformIntegrated",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

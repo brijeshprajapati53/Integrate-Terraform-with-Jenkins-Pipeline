@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\JENKINS\\Day-3-(4-4-25)\\Assignment\\WebAppTerraformIntegrated\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3352898A-EB7D-4138-8EDE-61B07F538B2B}|WebAppTerraformIntegrated\\WebAppTerraformIntegrated.csproj|d:\\cap\\cap-training\\phase-3-(27-march-25  to  17-april-25)-cloud platform\\labs\\jenkins\\day-3-(4-4-25)\\assignment\\webappterraformintegrated\\webappterraformintegrated\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3352898A-EB7D-4138-8EDE-61B07F538B2B}|WebAppTerraformIntegrated\\WebAppTerraformIntegrated.csproj|solutionrelative:webappterraformintegrated\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 629,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\JENKINS\\Day-3-(4-4-25)\\Assignment\\WebAppTerraformIntegrated\\WebAppTerraformIntegrated\\Program.cs",
+              "RelativeDocumentMoniker": "WebAppTerraformIntegrated\\Program.cs",
+              "ToolTip": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\JENKINS\\Day-3-(4-4-25)\\Assignment\\WebAppTerraformIntegrated\\WebAppTerraformIntegrated\\Program.cs",
+              "RelativeToolTip": "WebAppTerraformIntegrated\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T04:54:54.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 139,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 16,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
