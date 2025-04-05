@@ -13,29 +13,29 @@ pipeline {
             }
         }
 
-    stage('Terraform Init') {
-             steps {
-                     dir('terraform') {
-                     bat 'terraform init'
-                         }
-                 }
-         }
+    stage('Run Terraform Script') {
+    steps {
+        dir('Terraform') {
+            script {
+                bat 'terraform init'                        // Initialize
+                bat 'terraform validate'                    // Validate config
+                bat 'terraform plan -out=tfplan'            // Plan
+                bat 'terraform apply -auto-approve tfplan'  // Apply
+            }
+        }
+    }
+}
 
-        stage('Terraform Plan & Apply') {
- steps {
- dir('terraform') {
- bat 'terraform plan -out=tfplan'
-bat 'terraform apply -auto-approve tfplan'
- }
- }
- }
- stage('Publish .NET 8 Web API') {
- steps {
- dir('webapi') {
- bat 'dotnet publish -c Release -o out'
- }
- }
- }
+
+
+        stage('Publish .NET 8 Web API') {
+    steps {
+        dir('webapi') {
+            bat 'dotnet publish -c Release -o out'  // Publish API to "out" folder
+        }
+    }
+}
+
 
 
         stage('Build') {
